@@ -5,6 +5,12 @@ body{
 	color: #777777;
 }
 
+.masterWidth {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
 header {
 	position: relative;
 	background: #ffffff;
@@ -22,9 +28,8 @@ header {
 }
 
 nav {
-	width: 304px;
 	position: absolute;
-	left: 637px;
+	right: 15px;
 	top: 25px;
   	bottom: 25px;
 }
@@ -54,7 +59,7 @@ h2 {
 	color: #4aaaa5;
 }
 
-#about {
+#main {
 	overflow: auto;
 	margin-left: 15px;
 	margin-right: 10px;
@@ -78,7 +83,77 @@ article {
 	border-bottom: solid 2px #cccccc;
 }
 
-img {
+#contact {
+	color: #4aaaa5;
+	width: 100%;
+	border-bottom: solid 2px #cccccc;
+}
+
+form {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+input[type=text], textarea {
+    padding:5px; 
+    border:2px solid #ccc;
+    margin-bottom: 10px;
+    width: 98%;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background: #4aaaa5; 
+    border: 0 none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.portfolioItem {
+	position: relative;
+	width: 275px;
+	height: 205px;
+	float: left;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.portfolioItem div {
+	position: absolute;
+	z-index: 5;
+	background: #4aaaa5;
+	width: 100%;
+	line-height: 60px;
+	bottom: 10px;
+	color: white;
+	text-align: center;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.portfolioItem img {
+	position: absolute;
+	width: 100%;
+}
+
+#profile-pic {
+	height: 200px;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 20px;
+	float: left;
+}
+
+#icon {
 	height: 200px;
 	width: 200px;
 	margin-top: 20px;
